@@ -15,7 +15,7 @@ const router = express.Router();
 config({ path: path.join(__dirname, 'config.env') });
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:5173", "http://127.0.0.1:5173"],
+    origin: [process.env.FRONTEND_URL, "https://gym-website-one-gules.vercel.app", "http://localhost:5173"],
     methods: ["POST"],
     credentials: true,
 }));
