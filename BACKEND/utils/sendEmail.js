@@ -9,6 +9,9 @@ export const sendEmail = async(options)=>{
             user: process.env.SMTP_MAIL,
             pass: process.env.SMTP_PASSWORD,
         },
+        tls: {
+            rejectUnauthorized: false, // Helps with some network-level certificate issues
+        },
     });
     const mailOptions = {
         from: process.env.SMTP_MAIL,
