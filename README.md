@@ -91,7 +91,7 @@ The contact form component.
 
 2. **Frontend Setup**:
    ```bash
-   cd FRONTEND/gymapp
+   cd FRONTEND
    npm install
    ```
 
@@ -105,6 +105,6 @@ The contact form component.
 
 2. **Start Frontend**:
    ```bash
-   cd FRONTEND/gymapp
+   cd FRONTEND
    npm run dev
    ```
