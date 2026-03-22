@@ -10,8 +10,9 @@ export const sendEmail = async(options)=>{
             pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-            rejectUnauthorized: false, // Helps with some network-level certificate issues
+            rejectUnauthorized: false,
         },
+        family: 4, // Forces Nodemailer to use IPv4 instead of IPv6
     });
     const mailOptions = {
         from: process.env.SMTP_MAIL,
